@@ -17,7 +17,13 @@ const TaskForm = () => {
   const [taskData, setTaskData] = useState({
     task: "",
     status: "todo",
+    tags:[]
   });
+  const selectTag = ()=>{
+
+
+  }
+
   const handleChange = (e) => {
     const { name, value } = e.target;
 
@@ -45,7 +51,7 @@ const TaskForm = () => {
           />
           <div className="task_form_bottom_line">
             <div>
-              <Tag tagName="HTML" />
+              <Tag tagName="HTML" select/>
               <Tag tagName="CSS" />
               <Tag tagName="Java Script" />
               <Tag tagName="React" />
